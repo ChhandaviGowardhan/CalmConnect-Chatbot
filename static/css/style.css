@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    background-color: #f7f9fb;
+    
+    
+}
+
+header {
+    background-color: #f2e9e4; 
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #060506; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #07080a; 
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #9a8c98; 
+}
+
+.cta {
+    background-color: #c9ada7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #b73f57; }
+
+/* Hero Section */ 
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('images/126.jpg') center/cover no-repeat; 
+    padding: 0 20px;
+    color: #333; 
+}
+
+.hero-content {
+    max-width: 800px;
+    color: #333; 
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3f1e74; 
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #4a4e69; 
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #c9ada7; 
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #c9ada7; 
+}  
+
+
+
+/* About Section */
+.about-section {
+    background-color: #f2e9e4; 
+    padding: 80px 20px;
+    text-align: center;
+    background: url('images/126.jpg') center/cover no-repeat; 
+}
+
+.about-section h2 {
+    font-size: 36px;
+    color: #4a4e69;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #6d6875; 
+    margin-bottom: 40px;
+}
+
+.mental-health-parameters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.parameter {
+    background-color: #b8c1ec;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.parameter:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.parameter h3 {
+    font-size: 24px;
+    color: #3f4570; 
+    margin-bottom: 10px;
+}
+
+.parameter p {
+    font-size: 16px;
+    color: #2d2f43;
+}
+
+.parameter a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6d6875;
+    text-decoration: none;
+    border-bottom: 1px solid #6d6875;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.parameter a:hover {
+    color: #b5838d; 
+    border-bottom: 1px solid #b5838d;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #e8e8f0; 
+    padding: 80px 20px;
+    text-align: center;
+    background: url('images/126.jpg') center/cover no-repeat; 
+}
+
+.services-section h2 {
+    font-size: 36px;
+    color: #4a4e69; 
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    font-size: 18px;
+    color: #6d6875; 
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #f2e9e4; 
+    color: #4a4e69;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #6d6875;
+    margin-bottom: 20px;
+}
+
+.service-card .cta-btn {
+    background-color: #b8c1ec; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.service-card .cta-btn:hover {
+    background-color: #a3aed0; 
+}
+
+
+
+/* Get Help Section */
+.get-help-section {
+    background-color: #eae4e9;
+    padding: 60px 20px;
+    text-align: center;
+    background: url('images/126.jpg') center/cover no-repeat; 
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.get-help-section h2 {
+    font-size: 36px;
+    color: #4a4e69; 
+    margin-bottom: 20px;
+}
+
+.get-help-section p {
+    font-size: 18px;
+    color: #6d6875; 
+    margin-bottom: 40px;
+}
+
+
+.chatbot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2e9e4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*PAGES*/
+
+.detailed-section {
+    padding: 60px 40px;
+    background: url('images/126.jpg') center/cover no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    color: #333333; /* Dark tone for good visibility */
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    position: relative;
+}
+
+.detailed-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.detailed-section h1 {
+    position: relative;
+    z-index: 2;
+    color: #4a148c; /* Deep purple to match the floral theme */
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.detailed-section p {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #0b0b0b; /* Contrasting dark tone */
+    margin-bottom: 20px;
+}
+
+.detailed-section ul {
+    position: relative;
+    z-index: 2;
+    padding-left: 25px;
+    margin: 20px 0;
+    list-style-type: square;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    color: #333333;
+}
+
+.detailed-section ul li {
+    margin-bottom: 10px;
+}
+
+.detailed-section a {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    color: #aca4b5; /* Matching purple shade */
+    transition: color 0.3s ease;
+}
+
+.detailed-section a:hover {
+    color: #461f5e; /* Slightly lighter purple */
+}
+
+.cta-btn {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 30px;
+    color: #fff;
+    background: linear-gradient(45deg, #74638a, #6a1b9a);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:hover {
+    background: linear-gradient(45deg, #6a1b9a, #8e24aa);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Typography and Layout */
+@media (max-width: 768px) {
+    .detailed-section {
+        padding: 30px 20px;
+    }
+
+    .detailed-section h1 {
+        font-size: 28px;
+    }
+
+    .detailed-section p, .detailed-section ul {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        padding: 10px 25px;
+    }
+}
+
+
+
+/* Self-Care Resources Section CSS */
+#resources-section {
+    background: url('images/126.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    min-height: 100vh; /* Ensure the section fills at least the full viewport height */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+
+#resources-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
+    z-index: 1;
+}
+
+#resources-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.resource-item {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.resource-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2d2d2d;
+}
+
+.resource-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #483dff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
